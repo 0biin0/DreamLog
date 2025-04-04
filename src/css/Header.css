@@ -1,10 +1,17 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #f9f4ef;
-  }
+  position: fixed; 
+  top: 0;         
+  left: 0;
+  width: 100%;    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #C7ACA6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 아래 살짝 그림자 */
+  z-index: 1000; 
+}
+
   
   .left .logo {
     font-size: 24px;
@@ -14,7 +21,7 @@
   
   .center {
     display: flex;
-    gap: 30px;
+    gap: 100px;
   }
   
   .nav-item {
@@ -26,6 +33,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-right: 5rem;
   }
   
   .icon {

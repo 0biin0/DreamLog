@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import MainPage from "./pages/MainPage";
 import SettingPage from "./pages/SettingPage";
 import QnaPage from "./pages/QnaPage";
+import Diarypage from "./pages/diarypage";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/diary" element={<MainPage />} />
+        <Route path="/diary" element={<Diarypage />} />
         <Route path="/setting" element={<SettingPage />} />
         <Route path="/qna" element={<QnaPage />} />
       </Routes>

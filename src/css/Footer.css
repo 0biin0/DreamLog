@@ -1,0 +1,25 @@
+.footer-fixed { 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F5EFE4;
+    padding: 16px 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #ddd;
+    z-index: 999; /* header와 겹치지 않게 */
+  }
+  
+  .footer-slogan {
+    font-style: italic;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .footer-info {
+    margin: 4px 0 0 0;
+    font-weight: 500;
+    color: #444;
+  }
+  

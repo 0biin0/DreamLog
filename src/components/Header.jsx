@@ -17,7 +17,7 @@ function Header() {
       </nav>
       <div className="right">
         <FaUserCircle className="icon" />
-        <span className="login-text">Login</span>
+        <span className="login-text" onClick={() => navigate('/login')}>Login</span>
       </div>
     </header>
   );

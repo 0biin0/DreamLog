@@ -1,52 +1,120 @@
+body {
+  margin: 0;
+  background-color: #EAE3D7;
+  font-family: 'Pretendard', sans-serif;
+}
+
 .main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-    background-color: #f9f4ef;
-    min-height: 100vh;
-    padding: 40px 20px;
-    box-sizing: border-box;
-  }
-  
-  .top-section, .bottom-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    width: 100%;
-    max-width: 1200px;
-  }
-  
+  padding: 120px 20px 60px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ✅ 핵심: 양 옆 배치 + 글은 세로 가운데 */
+.top-section,
+.bottom-section {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 세로 가운데 정렬 */
+  gap: 60px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.image-block {
+  max-width: 500px;
+  flex-shrink: 0;
+}
+
+.image-block img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.text-block {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 세로 가운데 */
+  text-align: left;
+}
+
+.block-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.block-text {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ✅ 반응형 처리 */
+@media (max-width: 768px) {
+  .top-section,
   .bottom-section {
-    margin-top: 60px;
-  }
-  
-  .block {
-    flex: 1;
-    display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
+  }
+
+  .text-block {
     text-align: center;
+    align-items: center;
   }
-  
-  .block img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-  }
-  
+
   .block-title {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 16px;
-    color: #333;
+    font-size: 22px;
   }
-  
+
   .block-text {
-    margin-top: 16px;
-    font-size: 20px;
-    color: #555;
-    line-height: 1.5;
+    font-size: 16px;
   }
-  
+}
+/* 상단 인사말 */
+.main-heading {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.main-heading h1 {
+  font-size: 36px;
+  margin: 0;
+  color: #333;
+}
+
+.main-heading p {
+  font-size: 18px;
+  color: #777;
+  margin-top: 12px;
+}
+
+/* 이미지에 그림자 */
+.image-block img {
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* 하단 문구 */
+.main-footer {
+  margin-top: 60px;
+  font-size: 16px;
+  color: #444;
+  text-align: center;
+  font-style: italic;
+  opacity: 0.8;
+}

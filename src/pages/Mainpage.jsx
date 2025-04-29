@@ -24,7 +24,7 @@ function MainPage() {
         <div className="bottom-section">
           <div className="block text-block">
             <div className="block-text">
-              당신의 내일을, 오늘 여기 적어보세요.
+              당신의 내일을, 오늘 여기 적어보세요.📝
             </div>
           </div>
           <div className="block image-block">

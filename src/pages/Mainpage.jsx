@@ -5,7 +5,7 @@ function MainPage() {
     <div className="main-container">
       <div className="content-wrapper">
         <div className="main-heading">
-          <h1>당신의 꿈을 기록하세요</h1>
+          <h1>당신의 꿈을 기록하세요.</h1>
           <p>하루의 작은 생각이 내일의 현실이 됩니다.</p>
         </div>
 

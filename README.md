@@ -1,12 +1,25 @@
-# React + Vite
+# 🌙 DreamLog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> 감정과 목표를 기록하며, 나를 이해하고 성장하는 시간  
+> **DreamLog**는 감정 기반의 다이어리 기록 웹앱입니다.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧭 주요 기능
 
-## Expanding the ESLint configuration
+- 📅 **달력 기반 기록**  
+  날짜를 선택해 꿈/목표/감정을 작성하고 관리할 수 있어요.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 😊 **감정 태그 시각화**  
+  이모지나 색상으로 감정을 태깅하고 캘린더에 시각화합니다.
+
+- 📊 **월별 통계 확인** *(선택 기능)*  
+  한 달 동안의 감정 분포를 시각적으로 확인할 수 있어요.
+
+- 🌓 **다크모드 지원** *(선택 기능)*  
+  원하는 테마로 보기 쉽게 바꿀 수 있어요.
+
+- 🔐 **로그인 및 회원가입**  
+  이메일/비밀번호 기반 인증 기능을 제공합니다.
+
+---

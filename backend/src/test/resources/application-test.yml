@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dreamlog
+    username: dreamlog_user
+    password: dreamlog_pass
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  flyway:
+    enabled: false
+
+jwt:
+  secret: test-secret-key-that-is-at-least-256-bits-long-for-hmac-sha256-testing
+  access-token-expiry: 900000
+  refresh-token-expiry: 604800000
+
+encryption:
+  key: test-dev-encrypt-key-32-bytes!!
+
+openai:
+  api-key:
+  model: gpt-4o-mini

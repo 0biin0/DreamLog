@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: dreamlog
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dreamlog
+    username: dreamlog_user
+    password: dreamlog_pass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+jwt:
+  secret: ${JWT_SECRET:default-dev-secret-key-that-is-at-least-256-bits-long-for-hmac-sha256}
+  access-token-expiry: 900000
+  refresh-token-expiry: 604800000
+
+encryption:
+  key: ${ENCRYPTION_KEY:default-dev-encrypt-key-32bytes!}
+
+openai:
+  api-key: ${OPENAI_API_KEY:}
+  model: gpt-4o-mini
+
+server:
+  port: 8080

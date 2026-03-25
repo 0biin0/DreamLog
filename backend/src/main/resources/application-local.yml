@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dreamlog
+    username: dreamlog_user
+    password: dreamlog_pass
+
+logging:
+  level:
+    com.dreamlog: DEBUG
+    org.springframework.security: DEBUG
